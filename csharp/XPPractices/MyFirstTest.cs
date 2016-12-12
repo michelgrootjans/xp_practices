@@ -3,12 +3,12 @@
 namespace XPPractices
 {
     [TestFixture]
-    public class Tests
+    public class MyFirstTest
     {
         [Test]
-        public void Test1()
+        public void ShouldWork()
         {
-            Assert.True(true);
+            Assert.AreEqual(1+1, 2);
         }
     }
 }
