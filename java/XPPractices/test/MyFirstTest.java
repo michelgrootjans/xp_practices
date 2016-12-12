@@ -1,5 +1,3 @@
-package bowling;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +11,7 @@ public class MyFirstTest {
 
     @Test
     public void shouldWork() {
-        assertEquals(0, 0);
+        assertEquals(1+1, 2);
     }
 
 }
