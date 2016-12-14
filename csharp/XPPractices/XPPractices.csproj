@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BowlingGame.cs" />
+    <Compile Include="CaesarCypher.cs" />
     <Compile Include="CaesarCypherTests.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="BowlingGameTests.cs" />
