@@ -4,12 +4,16 @@ namespace XPPractices
 {
     public class BowlingGame
     {
-        private List<int> rolls = new List<int>();
+        private readonly List<int> rolls = new List<int>();
+        private bool isFirstRoll = true;
 
         public void Roll(int pins)
         {
             rolls.Add(pins);
-            if (pins == 10) rolls.Add(0); // dirty hack to keep the rolls in pairs
+            if (pins == 10 && isFirstRoll)
+                rolls.Add(0); // dirty hack to keep the rolls in pairs
+            else
+                isFirstRoll = !isFirstRoll;
         }
 
         public int GetScore()

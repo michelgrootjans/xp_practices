@@ -91,12 +91,13 @@ namespace XPPractices
             Assert.AreEqual(10 + 10 + 2 + 10 + 2 + 3 + 2 + 3, game.GetScore());
         }
 
-        [Test, Ignore("not yet implemented")]
+        [Test]
         public void Rolling_FakeStrike()
         {
             game.Roll(0);
             game.Roll(10);
             game.Roll(2);
+            Assert.AreEqual(0+10+2 + +2, game.GetScore());
         }
 
         [Test]
