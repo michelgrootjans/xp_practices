@@ -1,6 +1,6 @@
-// originally from https://github.com/emilybache/GildedRose-Refactoring-Kata
+﻿// originally from https://github.com/emilybache/GildedRose-Refactoring-Kata
 
-﻿using System.Collections.Generic;
+ using System.Collections.Generic;
 
 namespace XPPractices
 {

@@ -42,8 +42,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BowlingGame.cs" />
+    <Compile Include="CaesarCypherTests.cs" />
     <Compile Include="GildedRose.cs" />
-    <Compile Include="MyFirstTest.cs" />
+    <Compile Include="BowlingGameTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
