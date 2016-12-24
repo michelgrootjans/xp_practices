@@ -47,4 +47,18 @@ describe('Rolling', function () {
     expect(game.score()).toEqual(10+2+3 + 2+3)
   });
 
+  it('strike-strike-2-3 scores 20', function () {
+    game.roll(10);
+    game.roll(10);
+    game.roll(2);
+    game.roll(3);
+    expect(game.score()).toEqual(10+10+2 + 10+2+3 + 2+3)
+  });
+
+  it('a perfect game scores 300', function () {
+    for(var i=0; i<12; i++) {
+      game.roll(10);
+    }
+    expect(game.score()).toEqual(300)
+  });
 });
