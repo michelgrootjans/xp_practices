@@ -32,4 +32,19 @@ describe('Rolling', function () {
     game.roll(2);
     expect(game.score()).toEqual(6 + 4 + 2 + 2);
   });
+
+  it('all 5-es scores 150', function () {
+    for(var i=0; i<21; i++) {
+      game.roll(5);
+    }
+    expect(game.score()).toEqual(150);
+  });
+
+  it('strike-2-3 scores 20', function () {
+    game.roll(10);
+    game.roll(2);
+    game.roll(3);
+    expect(game.score()).toEqual(10+2+3 + 2+3)
+  });
+
 });
