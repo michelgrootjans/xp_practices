@@ -45,8 +45,11 @@
     <Compile Include="BowlingGame.cs" />
     <Compile Include="CaesarCypher.cs" />
     <Compile Include="CaesarCypherTests.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="FunctionalBowlingGame.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="BowlingGameTests.cs" />
+    <Compile Include="IBowlingGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

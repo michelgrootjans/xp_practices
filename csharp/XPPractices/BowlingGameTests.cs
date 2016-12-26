@@ -5,12 +5,13 @@ namespace XPPractices
     [TestFixture]
     public class BowlingGameTest
     {
-        private BowlingGame game;
+        private IBowlingGame game;
 
         [SetUp]
         public void SetUp()
         {
             game = new BowlingGame();
+//            game = new FunctionalBowlingGame();
         }
 
 

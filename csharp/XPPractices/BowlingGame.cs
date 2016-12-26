@@ -2,7 +2,7 @@
 
 namespace XPPractices
 {
-    public class BowlingGame
+    public class BowlingGame : IBowlingGame
     {
         private readonly List<int> rolls = new List<int>();
         private bool isFirstRoll = true;
