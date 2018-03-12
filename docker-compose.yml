@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python:
+    build: python
+    volumes:
+    - ./python:/python
+    working_dir: /python
+    command: sniffer
