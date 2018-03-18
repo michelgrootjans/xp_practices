@@ -1,8 +1,17 @@
 version: '3'
 services:
+
   python:
     build: python
     volumes:
     - ./python:/python
     working_dir: /python
     command: sniffer
+
+  rspec:
+    image: ruby:alpine
+    volumes: 
+      - ./ruby/rspec:/rspec
+      - ./ruby/bundle:/usr/local/bundle
+    working_dir: /rspec
+    command: sh rspec.sh
